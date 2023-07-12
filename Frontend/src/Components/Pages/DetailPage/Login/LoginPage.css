@@ -1,0 +1,68 @@
+.pageBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    width: 34vw;
+    margin: auto;
+    min-height: 832px; 
+    min-width: 430px;
+}
+
+.titleBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.titleBox h1{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0rem;
+}
+.titleBox h2{
+    font-size: 1rem;
+    margin-bottom: 15rem;
+}
+
+.kakaoBtn{
+    cursor: pointer;
+    margin-bottom: 8rem;
+}
+
+
+@media screen and (min-width:280px){
+    .titleBox{
+        margin-top: 7rem;
+    }
+}
+
+@media screen and (min-width:375px){
+    .titleBox{
+        margin-top: 8.4rem;
+    }
+}
+
+@media screen and (min-width:768px){
+    .titleBox{
+        margin-top: 13rem;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .titleBox{
+        margin-top: 15rem;
+    }
+}
+
+@media (min-width:1920px) {
+    .titleBox{
+        margin-top: 16.3rem;
+    }
+    .titleBox h2{
+        margin-bottom: 17rem;
+    }
+}
