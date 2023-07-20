@@ -1,0 +1,31 @@
+.footer {
+  position: fixed;
+  display: flex;
+  bottom: 0px;
+  height: 9vh;
+  width: 34vw;
+  min-width: 430px;
+  min-height: 84px;
+  align-items: center;
+  justify-content: right;
+  background-color: white;
+  border-top: 3px solid #e5e5e5;
+}
+
+.contents {
+  min-width: 430px;
+  list-style: none;
+  padding-left: 0px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contents li {
+  cursor: pointer;
+}
+
+.contents li:hover {
+  color: #007bff;
+}

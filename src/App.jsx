@@ -4,6 +4,7 @@ import LoginPage from "./components/pages/DetailPage/Auth/LoginPage";
 import MainPage from "./components/Pages/MainPage/MainPage";
 import KaKaoCallBack from "./components/pages/DetailPage/Auth/KaKaoCallBack";
 // import ErrorPage from "./Components/Pages/DetailPage/Error/ErrorPage";
+import MyPage from "./components/pages/DetailPage/MyPage/MyPage";
 import { Fragment } from "react";
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
         <Route path="/" element={<MainPage />} />
         <Route path="/login" element={<LoginPage />} />
         {/* <Route path="/*" element={<ErrorPage />} /> */}
-
+        <Route path="/mypage" element={<MyPage />} />
         <Route path="/oauth" element={<KaKaoCallBack />} />
       </Routes>
     </Fragment>
