@@ -20,7 +20,6 @@ const MyPage = () => {
         <img
           src={warning}
           alt="경고 이미지입니다."
-          className={classes.warningImg}
         />
         <h1 className={classes.warning}>생성된 일정이 없습니다.</h1>
       </main>

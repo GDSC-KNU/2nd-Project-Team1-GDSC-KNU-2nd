@@ -39,6 +39,10 @@
 }
 
 .pageBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: white;
   width: 34vw;
   /* min-width: 430px; */
@@ -68,33 +72,24 @@
 }
 
 .warning {
-  position: fixed; /* 절대적으로 위치시킵니다. */
-  top: 50%; /* 세로 방향으로 50% 위치로 이동합니다. */
-  left: 50%; /* 가로 방향으로 50% 위치로 이동합니다. */
-  transform: translate(-50%, -50%);
   font-size: 1.5rem;
   color: #a1a1a1;
   font-weight: 100;
 }
 
-.warningImg {
-  position: fixed; /* 절대적으로 위치시킵니다. */
-  top: 46%; /* 세로 방향으로 50% 위치로 이동합니다. */
-  left: 50%; /* 가로 방향으로 50% 위치로 이동합니다. */
-  transform: translate(-50%, -50%);
-}
+
 
 @media screen and (min-width: 280px) {
   .header {
     width: 100%;
   }
-  .buttonBox{
+  .buttonBox {
     width: 100%;
   }
   .pageBox {
     width: 100%;
   }
-  .button{
+  .button {
     width: 80px;
     height: 34px;
     font-size: 0.7rem;
@@ -108,11 +103,11 @@
     width: 34vw;
     min-width: 430px;
   }
-  .buttonBox{
+  .buttonBox {
     width: 34vw;
     min-width: 430px;
   }
-  .button{
+  .button {
     width: 109px;
     height: 34px;
     font-size: 1rem;
