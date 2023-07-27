@@ -6,18 +6,18 @@ import { TbCameraPlus } from "react-icons/tb";
 import { useState } from "react";
 
 const Recording = () => {
-  const [profileImg, setProfileImg] = useState(null);
+  const [enteredImg, setEnteredImg] = useState(null);
   const [file, setFile] = useState(null);
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredContent, setEnteredContent] = useState("");
 
-  const encodeFileToBase64 = (fileBlob) => {
+  const uploadFile = (fileBlob) => {
     const reader = new FileReader();
     reader.readAsDataURL(fileBlob);
     setFile(fileBlob);
     return new Promise((resolve) => {
       reader.onload = () => {
-        setProfileImg(reader.result);
+        setEnteredImg(reader.result);
         resolve();
       };
     });
@@ -41,7 +41,7 @@ const Recording = () => {
       // const makeFormData = { title: setEnteredTitle, content: setEnteredTitle };
       setEnteredTitle("");
       setEnteredContent("");
-    } else{
+    } else {
       event.preventDefault();
     }
   };
@@ -64,14 +64,19 @@ const Recording = () => {
                 accept="image/jpg,image/png,image/jpeg,image/gif"
                 name="file"
                 onChange={(e) => {
-                  encodeFileToBase64(e.target.files[0]);
+                  uploadFile(e.target.files[0]);
                 }}
               />
-              {profileImg && (
-                <div className={styles.cameraBox} type="file">
-                  <TbCameraPlus size="27" />
-                  <div>0/12</div>
-                </div>
+              {enteredImg && (
+                // <div className={styles.cameraBox} type="file">
+                //   <TbCameraPlus size="27" />
+                //   <div>0/12</div>
+                // </div>
+                <img
+                  src={enteredImg}
+                  alt="preview-img"
+                  className={styles.cameraBox}
+                />
               )}
             </article>
             <article className={styles.registerTitle}>
