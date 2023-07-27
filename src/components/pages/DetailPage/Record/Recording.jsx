@@ -41,6 +41,8 @@ const Recording = () => {
       // const makeFormData = { title: setEnteredTitle, content: setEnteredTitle };
       setEnteredTitle("");
       setEnteredContent("");
+    } else{
+      event.preventDefault();
     }
   };
 
