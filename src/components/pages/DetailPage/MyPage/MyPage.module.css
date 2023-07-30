@@ -1,0 +1,122 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header {
+  position: fixed;
+  display: flex;
+  height: 84px;
+  width: 34vw;
+  align-items: center;
+  justify-content: right;
+  background-color: white;
+  /* border-bottom: 3px solid #e5e5e5; */
+}
+
+.buttonBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  margin: 84px 0px 0px 0px;
+  height: 50px;
+  width: 34vw;
+  background-color: white;
+  border-bottom: 3px solid #e5e5e5;
+  list-style: none;
+  padding-left: 0;
+}
+
+.headerContents {
+  /* min-width: 430px; */
+  margin: 0 auto;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #007bff;
+}
+
+.pageBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 34vw;
+  /* min-width: 430px; */
+  margin: 134px 0px 84px 0px;
+  margin-bottom: 9vh;
+  height: calc(100vh - 134px - 84px);
+  overflow: auto;
+}
+
+.button {
+  border-radius: 20px;
+  border: 0;
+  background-color: #e1e1e1;
+  margin: 10px;
+}
+
+.button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.warning {
+  font-size: 1.5rem;
+  color: #a1a1a1;
+  font-weight: 100;
+}
+
+
+
+@media screen and (min-width: 280px) {
+  .header {
+    width: 100%;
+  }
+  .buttonBox {
+    width: 100%;
+  }
+  .pageBox {
+    width: 100%;
+  }
+  .button {
+    width: 80px;
+    height: 34px;
+    font-size: 0.7rem;
+  }
+  .warning {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 430px) {
+  .header {
+    width: 34vw;
+    min-width: 430px;
+  }
+  .buttonBox {
+    width: 34vw;
+    min-width: 430px;
+  }
+  .button {
+    width: 109px;
+    height: 34px;
+    font-size: 1rem;
+  }
+  .pageBox {
+    width: 34vw;
+    min-width: 430px;
+  }
+  .warning {
+    font-size: 1.3rem;
+  }
+}

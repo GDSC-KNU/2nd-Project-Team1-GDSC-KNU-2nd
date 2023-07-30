@@ -38,6 +38,9 @@
     .titleBox{
         margin-top: 7rem;
     }
+    .pageBox{
+        height: 110vh;
+    }
 }
 
 @media screen and (min-width:375px){

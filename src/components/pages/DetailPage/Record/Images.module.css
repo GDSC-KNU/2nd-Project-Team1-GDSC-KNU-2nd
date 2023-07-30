@@ -1,0 +1,47 @@
+.addButton input[type="file"] {
+  display: none;
+}
+
+.addPicture {
+  display: flex;
+  overflow: auto;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: left; 
+  overflow: auto;
+}
+
+.cameraBox {
+  margin-left: 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #d9d9d9;
+  border-radius: 10px;
+  cursor: pointer;
+  flex-direction: row;
+}
+
+.imgBox{
+    display: flex;
+}
+
+
+@media (min-width: 280px) {
+  .cameraBox {
+    width: 22vw;
+    height: 10vh;
+    min-width: 74px;
+  }
+}
+
+@media (min-width: 430px) {
+  .cameraBox {
+    width: 5vw;
+    height: 10vh;
+    min-width: 100px;
+  }
+}
