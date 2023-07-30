@@ -2,26 +2,12 @@ import Footer from "../../../common/Footer";
 import styles from "./Recording.module.css";
 // import photo from "../../../../Assets/photo.png";
 import logoBtn from "../../../../Assets/buttonLogo.png";
-import { TbCameraPlus } from "react-icons/tb";
+import Images from "./Images";
 import { useState } from "react";
 
 const Recording = () => {
-  const [enteredImg, setEnteredImg] = useState(null);
-  const [file, setFile] = useState(null);
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredContent, setEnteredContent] = useState("");
-
-  const uploadFile = (fileBlob) => {
-    const reader = new FileReader();
-    reader.readAsDataURL(fileBlob);
-    setFile(fileBlob);
-    return new Promise((resolve) => {
-      reader.onload = () => {
-        setEnteredImg(reader.result);
-        resolve();
-      };
-    });
-  };
 
   const titleChangeHandler = (event) => {
     // console.log("titleChangeHandler", event.target.value);
@@ -37,7 +23,6 @@ const Recording = () => {
     if (confirm("업로드하시겠습니까?")) {
       alert("확인 되었습니다.");
       event.preventDefault();
-
       // const makeFormData = { title: setEnteredTitle, content: setEnteredTitle };
       setEnteredTitle("");
       setEnteredContent("");
@@ -55,29 +40,7 @@ const Recording = () => {
         <section>
           <form onSubmit={submitHandler}>
             <article className={styles.registerPhoto}>
-              {/* <div className={styles.cameraBox}>
-                <TbCameraPlus size="27" />
-                <div>0/12</div>
-              </div> */}
-              <input
-                type="file"
-                accept="image/jpg,image/png,image/jpeg,image/gif"
-                name="file"
-                onChange={(e) => {
-                  uploadFile(e.target.files[0]);
-                }}
-              />
-              {enteredImg && (
-                // <div className={styles.cameraBox} type="file">
-                //   <TbCameraPlus size="27" />
-                //   <div>0/12</div>
-                // </div>
-                <img
-                  src={enteredImg}
-                  alt="preview-img"
-                  className={styles.cameraBox}
-                />
-              )}
+              <Images />
             </article>
             <article className={styles.registerTitle}>
               <input
