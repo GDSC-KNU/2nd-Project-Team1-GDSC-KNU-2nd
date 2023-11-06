@@ -14,7 +14,7 @@ const Footer = () => {
   };
 
   const onClickAdd = () => {
-    navigate("/add");
+    navigate("/create");
   };
 
   const onClickMap = () => {

@@ -1,0 +1,129 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  height: 84px;
+  width: 34vw;
+  align-items: center;
+  justify-content: right;
+  background-color: white;
+  border-bottom: 3px solid #e5e5e5;
+}
+
+.headerContents {
+  margin: 0 auto;
+  margin-top: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #007bff;
+}
+
+.mainContents {
+  overflow: auto;
+  background-color: white;
+  width: 34vw;
+  margin: 84px 0px 84px 0px;
+  height: calc(100vh - 84px - 84px);
+  overflow: auto;
+}
+
+.Calendar{
+    margin: 0 auto;
+}
+
+.Question {
+  text-align: left;
+}
+
+.btnAction {
+  display: flex;
+  justify-content: right;
+  margin: 1rem 1rem 1rem 0rem;
+}
+
+
+.personBox{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.submitBtn {
+  border-radius: 50px;
+  border: 3px solid #007bff;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Question {
+  text-align: left;
+  margin-bottom: 1rem;
+  width: 90%;
+}
+
+.button {
+  display: flex;
+  flex-wrap: wrap;
+  /* 버튼들이 너비를 넘어가면 다음 줄로 배치 */
+  justify-content: start;
+  align-items: start;
+  margin: 1rem;
+  /* 가로 방향으로 중앙 정렬 */
+}
+
+
+
+.submitBtn:hover {
+  transition: all 0.3s;
+  scale: 1.05;
+}
+
+@media (min-width: 280px) {
+  .header {
+    width: 100%;
+  }
+
+  .mainContents {
+    width: 100%;
+  }
+
+  .Calendar {
+    width: 90%;
+    overflow: auto;
+  }
+}
+
+@media (min-width: 430px) {
+  .header {
+    width: 34vw;
+    min-width: 430px;
+  }
+
+  .mainContents {
+    width: 34vw;
+    min-width: 430px;
+  }
+  .Calendar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: auto;
+  }
+}

@@ -1,0 +1,93 @@
+.btnSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnSectionEat{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.clickBtn {
+    width: 7.9vw;
+    height: 4.9vh;
+    border-radius: 20px;
+    border: 0px;
+    background-color: #E5E5E5;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.clickBtn:hover {
+    background-color: #87CEFA;
+    color: white;
+}
+
+.clickBtn.active {
+    background-color: #87CEFA;
+    color: white;
+}
+
+.clickSquareBtn {
+    width: 102px;
+    height: 102px;
+    border-radius: 20px;
+    border: 0px;
+    background-color: #E5E5E5;
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.clickSquareBtn:hover {
+    background-color: #87CEFA;
+    color: white;
+}
+
+.clickSquareBtn.active {
+    background-color: #87CEFA;
+    color: white;
+}
+
+.countBtn{
+    width: 59px;
+    height: 40.73px;
+    border-radius: 20px;
+    border: 0px;
+    background-color: #E5E5E5;
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.countBtn:hover{
+    background-color: #87CEFA;
+    color: white;
+}
+
+.countBtn:active{
+    background-color: #87CEFA;
+    color: white;
+}
+
+@media (min-width: 280px) {
+    .clickBtn {
+        width: 20vw;
+    }
+
+}
+
+@media(min-width: 768px) {
+    .clickBtn {
+        width: 7.9vw;
+        max-height: 40.73px;
+    }
+}

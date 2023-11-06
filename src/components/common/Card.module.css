@@ -1,0 +1,25 @@
+.card {
+  margin: 1rem auto;
+  border-radius: 6px;
+  border: 1px solid #e5e5e5;
+  background-color: white;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  padding: 1rem;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (min-width: 280px) {
+  .card {
+    width: 160px;
+    height: 190.55px;
+  }
+}
+
+@media (min-width: 390px) {
+  .card {
+    width: 220px;
+    height: 262px;
+  }
+}
