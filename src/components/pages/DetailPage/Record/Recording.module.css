@@ -32,26 +32,12 @@
   overflow: auto;
 }
 
-
-
 .registerPhoto {
   height: 15vh;
   border-bottom: 3px solid #e5e5e5;
   display: flex;
   justify-content: left;
   align-items: center;
-}
-
-.cameraBox {
-  margin-left: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  background-color: #d9d9d9;
-  border-radius: 10px;
-  cursor: pointer;
 }
 
 .registerTitle {
@@ -85,13 +71,13 @@
   overflow: auto;
 }
 
-.btnAction{
+.btnAction {
   display: flex;
   justify-content: right;
   margin-right: 1rem;
 }
 
-.submitBtn{
+.submitBtn {
   border-radius: 50px;
   border: 3px solid #007bff;
   width: 60px;
@@ -102,11 +88,10 @@
   cursor: pointer;
 }
 
-.submitBtn:hover{
+.submitBtn:hover {
   transition: all 0.3s;
   scale: 1.05;
 }
-
 
 @media (min-width: 280px) {
   .header {
@@ -119,12 +104,7 @@
     font-size: 1rem;
     width: 80%;
   }
-  .cameraBox {
-    min-width: 80px;
-    width: 27%;
-    height: 12.5vh;
-  }
-  .Input{
+  .Input {
     font-size: 1rem;
     width: 80%;
   }
@@ -143,12 +123,7 @@
     width: 30vw;
     min-width: 356px;
   }
-  .cameraBox {
-    width: 6.5vw;
-    height: 12.5vh;
-    min-width: 113.2px;
-  }
-  .Input{
+  .Input {
     min-width: 356px;
   }
 }

@@ -2,9 +2,7 @@ import "./LoginPage.css";
 import Logo from "../../../../assets/Logo.png";
 import kakaoBtn from "../../../../assets/kakao_login.png";
 import { KAKAO_AUTH_URI } from "../../../../Constants/OAuth";
-
 const LoginPage = () => {
-
   const handleLogin = () => {
     window.location.href = KAKAO_AUTH_URI;
   };

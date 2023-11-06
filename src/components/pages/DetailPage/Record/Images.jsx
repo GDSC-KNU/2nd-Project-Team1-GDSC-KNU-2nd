@@ -53,9 +53,7 @@ const Images = () => {
               src={image}
               alt={`${image}-${id}`}
             />
-            <BiXCircle
-              onClick={() => handleDeleteImage(id)}
-            />
+            <BiXCircle onClick={() => handleDeleteImage(id)} />
           </div>
         ))}
       </div>

@@ -1,0 +1,61 @@
+.Budget {
+  display: "flex";
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #e5e5e5;
+  border-radius: 20px;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.inputMoney {
+  text-align: left;
+  height: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  background-color: #e5e5e5;
+  border: none; /* 경계선 없애기 */
+  outline: none; /* 포커스시 발생하는 테두리 제거 */
+}
+
+.won {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-left: 5px;
+}
+
+@media (min-width: 280px){
+    .Budget{
+        width: 60vw;
+        height: 50px;
+    }
+    .inputMoney{
+        width: 40vw;
+    }
+}
+
+@media (min-width: 430px){
+    .Budget{
+        width: 40vw;
+        height: 72px;
+    }
+    .inputMoney{
+        width: 20vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .Budget{
+        width: 279px;
+        height: 72px;
+    }
+    .inputMoney{
+        width: 200px;
+    }
+}

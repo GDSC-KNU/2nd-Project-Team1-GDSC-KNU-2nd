@@ -4,8 +4,10 @@ import styles from "./Recording.module.css";
 import logoBtn from "../../../../Assets/buttonLogo.png";
 import Images from "./Images";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Recording = () => {
+  const navigate = useNavigate();
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredContent, setEnteredContent] = useState("");
 
@@ -26,6 +28,7 @@ const Recording = () => {
       // const makeFormData = { title: setEnteredTitle, content: setEnteredTitle };
       setEnteredTitle("");
       setEnteredContent("");
+      navigate("/mypage");
     } else {
       event.preventDefault();
     }
